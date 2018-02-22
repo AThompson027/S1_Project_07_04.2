@@ -7,7 +7,7 @@
  *    Date: 2.12.18
 
  *    Filename: tuba.js
- * 
+ *
  */
 
 /* global variables tracking status of each form section */
@@ -42,7 +42,7 @@ var fuelFieldset = document.getElementsByTagName("fieldset")[3];
 } catch (message) {
         validity = false;
         messageText = message;
-        acresBox.value = ""; //remove erroneous entry input box 
+        acresBox.value = ""; //remove erroneous entry input box
     }
     finally {
         acresComplete = validity;
@@ -69,6 +69,7 @@ function verifyCrops() {
         messageElement.innerHTML = message; //displays error message
     }
 }
+//fixed a missing bracket and fixed syntax errors
 
 /* verify months text box entry is between 1 and 12 */
 function verifyMonths() {
@@ -82,7 +83,7 @@ function verifyMonths() {
 } catch (message) {
         validity = false;
         messageText = message;
-        monthsBox.value = ""; //remove erroneous entry input box 
+        monthsBox.value = ""; //remove erroneous entry input box
     }
     finally {
         monthsComplete = validity;
